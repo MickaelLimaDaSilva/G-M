@@ -1,0 +1,143 @@
+/* styles.css */
+
+/* Style général du corps de la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEFD7;
+    color: #333;
+}
+
+/* En-tête sticky avec fond transparent */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(141, 0, 2, 0); /* Fond rouge avec transparence */
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000; /* Assure que l'en-tête soit au-dessus du reste du contenu */ /* Optionnel : ajoute un effet de flou derrière l'en-tête */
+}
+
+/* Conteneur pour centrer le contenu de l'en-tête */
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Style pour le titre dans l'en-tête */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Style pour les liens de changement de langue */
+header .language-switcher {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+header .language-switcher a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+header .language-switcher a:hover {
+    text-decoration: underline;
+}
+
+/* Style des sections */
+.section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Réduire la largeur à 50% */
+    border: 2px solid #8D0002;
+    box-sizing: border-box; /* Inclure la bordure dans la taille de la section */
+}
+
+.section:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.section h2 {
+    color: #8D0002;
+    margin-top: 0;
+}
+
+.countdown {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #8D0002;
+    margin-top: 20px;
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #8D0002;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #6D0000;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #8D0002;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style responsive */
+@media (max-width: 768px) {
+    header .language-switcher {
+        display: block;
+    }
+
+    header .language-switcher {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .section {
+        padding: 20px;
+        margin: 10px 0;
+    }
+}
